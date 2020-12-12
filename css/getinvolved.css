@@ -1,0 +1,61 @@
+:root {
+    --main-deco-color: #214c57;
+    --nav-color: #bcfd2b;
+    --card-main-color: #533083;
+    --orange: ;
+    --text-deco: #ffffff;
+    --text-read: #000000;
+  }
+  
+  
+  .card-grid {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .card-grid {
+    width: 100%;
+    position: relative;
+    border: solid #f2f2f2 0.1em;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  
+  }
+  .card-grid:hover {
+    top: -3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+.donationsForm {
+    font-family: "roboto", sans-serif;
+    color: var(--text-read);
+    width: 80%;
+    position: relative;
+    border: solid #f2f2f2 0.1em;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.donationsFormInner {
+    margin-bottom: 1em;
+    padding: 1em;
+
+}
+
+input:invalid+span:after {
+    content: '*Requierd';
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    content: 'NOK';
+    padding-left: 5px;
+}
+
+input[type="submit"] {
+    display: none;
+
+}
+
+
+  
+  
+    

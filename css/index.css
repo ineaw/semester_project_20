@@ -1,0 +1,132 @@
+
+
+.hero {
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+    margin-top: 65px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(240deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url("../images/spaceman_close_up.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "bebas neue pro", Arial, Helvetica, sans-serif;
+  }
+  
+  .hero h1 {
+    font-size: 5em;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  
+  .heroCard {
+   background-color: #000000;
+   padding: 1.5em;
+   position: relative;
+   float: left;
+   max-width: 400px;
+   margin: 0 auto;
+  }
+  
+  .hero h2 {
+    color: #ffffff;
+    font-size: 24px;
+  
+  }
+  
+  .hero p {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  
+  
+  .introWrap {
+   background-color: rgb(167, 236, 167);
+   width: 60%;
+   padding: 1em;
+  
+  
+  }
+  
+  /* Content Grid*/
+  
+  /* Content Grid*/
+  
+  .card_grid {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+  }
+  
+  .card:hover {
+    top: -3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+    
+  
+  .card .fas {
+    position: relative;
+    float: right;
+    color: #ffff;
+    font-size: 0.7em;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 600;
+  }  
+  
+  
+  .card .fas:hover {
+    right: -1em;
+  }
+  .card .card_image {
+    padding-bottom: 40%;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .card_grid{
+      grid-template-columns: 1fr 1fr;
+      }
+    
+      
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .heroCard {
+      width: 200px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+  
+  }
+  
+  @media screen and (min-width: 900px) {
+    .card_grid {
+      grid-template-columns: 1fr 1fr 1fr ;
+    }    
+    }
+  
