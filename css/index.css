@@ -1,11 +1,19 @@
+:root {
+  --main-deco-color: #214c57;
+  --nav-color: #bcfd2b;
+  --card-main-color: #533083;
+  --orange: ;
+  --text-deco: #ffffff;
+  --main: #ffffff;
+  --text-read: #000000;
+}
 
 /*hero image*/
 .hero {
     max-width: 100%;
-    width: 100%;
     height: 500px;
     margin-top: 65px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(240deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url("../images/spaceman_close_up.jpg");
@@ -13,11 +21,11 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: "bebas neue pro", Arial, Helvetica, sans-serif;
+    font-family: "bebas neue pro light", Arial, Helvetica, sans-serif;
   }
   
   .hero h1 {
-    font-size: 5em;
+    font-size: 6em;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
@@ -25,23 +33,34 @@
   
   
   .heroCard {
-   background-color: #000000;
+   background-color: var(--text-read);
    padding: 1.5em;
    position: relative;
    float: left;
-   max-width: 400px;
-   margin: 0 auto;
+   margin-top: -40px;
   }
   
   .hero h2 {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 400;
   
   }
-  
+  .hero h3 {
+    color: var(--text-deco);
+    font-family: "bebas neue pro", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+
+  }
+
+
   .hero p {
     font-size: 14px;
     color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+ 
   }
   
   
@@ -77,8 +96,8 @@
     top: -3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   }
-    
-  
+
+  .hero .fas,
   .card .fas {
     position: relative;
     float: right;
@@ -89,7 +108,12 @@
     font-weight: 600;
   }  
   
-  
+  .hero .fas {
+    font-size: 1.5em;
+  }  
+
+
+  .hero .fas:hover,
   .card .fas:hover {
     right: -1em;
   }
@@ -108,8 +132,13 @@
   }
   
   @media only screen and (max-width: 800px) {
+    .hero h1 {
+      font-size: 5em;
+    }
+
+
     .heroCard {
-      width: 200px;
+      width: 300px;
     }
   }
   

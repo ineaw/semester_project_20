@@ -308,6 +308,7 @@ margin-bottom: 40px;
   vertical-align: top;
   color: var(--text-deco);
   color: #ffffff;
+  padding: 0.7em;
 
 }
 
@@ -318,7 +319,8 @@ margin-bottom: 40px;
 }
 
 .footer-container .footer-links a:hover {
-  color: var(--nav-color);
+  box-shadow: inset  0 -0.20em rgba(188, 253, 43);
+  transition: inherit;
 }
 
 .footer-container .footer-links a{
@@ -331,18 +333,8 @@ margin-bottom: 40px;
   color: #ffffff;
   text-transform: uppercase;
 }
-.footer-container .footer-center {
-  width: 30%;
-}
 
-.footer-container .footer-center p {
-  margin-bottom: 0.5em;
-}
 
-.footer-container .footer-hours p:nth-child(1) {
-  font-weight: 600;
-  }
-  
 
 .footer-container .footer-hours {
   display: block;
@@ -351,18 +343,6 @@ margin-bottom: 40px;
 }
 
 
-
-.footer-container .footer-right {
-  width: 30%;
-}
-
-.footer-container .footer-center p {
-  margin-bottom: 0.5em;
-}
-
-.footer-container .footer-hours p:nth-child(1) {
-  font-weight: 600;
-  }
   
 
 .footer-container .footer-hours {
@@ -377,7 +357,8 @@ margin-bottom: 40px;
   margin-bottom: 0.5em;
 }
 
-.footer-container .footer-right p:nth-child(1)  {
+.footer-container .footer-right p:nth-child(1),
+.footer-container .footer-hours p:nth-child(1)  {
   font-weight: 600;
 }
 
@@ -386,14 +367,6 @@ margin-bottom: 40px;
   color: #ffffff;
   font-size: 1em;
 }
-
-
-
-.footer-container .footer-right {
-  width: 30%;
-  float: right;
-}
-
 
 
 .footer-container .footer-right p  {
@@ -439,7 +412,7 @@ input[type="email"] {
   color: #000000;
   font-family: "roboto", Helvetica, sans-serif;
   margin-top: 2%;
-  font-size: 16px;
+  font-size: 1.5em;
   color: #000000;
 
 }
@@ -492,17 +465,18 @@ button[type="submit"] {
   color: var(--text-deco);
   padding: 4px 4px 4px 4px;
   border: none;
-  border-radius: 0px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   cursor: pointer;
   font-family: "roboto" sans-serif;
   font-size: 0.8em;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 1em;
 
 }
 
 button[type="submit"]:hover {
   background-color: var(--nav-color);
+  color: var(--text-read);
 
 }
 
@@ -521,9 +495,11 @@ input:valid+button:after {
   padding-left: 5px;
 }
 
-input:invalid+button:after:active {
+input:invalid+button:after {
+  content: 'Enter valid Email';
   padding-left: 5px;
 }
+
 .sm-icons {
   display: flex;
   margin-bottom: 2%;
@@ -538,12 +514,12 @@ input:invalid+button:after:active {
 .sm-icons a {
   background-color: var(--text-read);
   color: var(--text-deco);
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
+  font-size: 1em;
+  width: 2em;
+  height: 2em;
   border-radius: 50%;
   text-align: center;
-  line-height: 40px;
+  line-height: 2em;
   margin: 10px 10px;
   vertical-align: middle;
 }
@@ -552,22 +528,25 @@ input:invalid+button:after:active {
   font-size: 22.5px;
   width: 45px;
   height: 45px;
-  line-height: 45px;
 }
 .sm-icons a:nth-child(1):hover {
-background-color: pink;
+background-color: #4267B2;
+font-size: 22.5px;
+width: 45px;
+height: 45px;
+
 }
 
 .sm-icons a:nth-child(2):hover {
-  background-color: blue;
+  background-color: #6441a5;
 }
 
 .sm-icons a:nth-child(3):hover {
-  background-color: green;
+  background-color: #bc2a8d;
 }
 
 .sm-icons a:nth-child(4):hover {
-  background-color: red;
+  background-color: #c4302b;
 }
 
 
