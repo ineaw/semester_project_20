@@ -62,7 +62,7 @@ h2 {
 }
 .card h2 {
   padding: 5%;
-  font-family: "bebas neue pro light", sans-serif;
+  font-family: "bebas neue pro", sans-serif;
   text-align: start;
   font-weight: 400;
 }
@@ -403,7 +403,21 @@ input[type="email"] {
 
 /* sub footer*/
 
+.arrowToTop {
+  padding: 1em;
+  float: right;
+  margin-left: -80px;
+}
 
+.arrowToTop .fas {
+  font-size: 2em;
+  rotate: 270deg;
+  color: #000000;
+}
+
+.arrowToTop .fas:hover {
+  color: var(--nav-color);
+}
 
 .footer_2 {
   height: 200px;
