@@ -85,8 +85,10 @@ p {
   margin-left: 10px;
 margin-bottom: 40px;
 }
-
-
+.header-text {
+max-width: 600px;
+margin: 0 auto;
+}
 .contentText {
   max-width: 60%;
   margin: 0 auto;
@@ -94,7 +96,7 @@ margin-bottom: 40px;
 
 .about-text {
   padding: 1em;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -198,7 +200,6 @@ padding-bottom: 5px;
 margin-bottom: 40px;
 }
 
-
 .navbar-index a {
   color: black;
   font-size: 1.5em;
@@ -213,14 +214,14 @@ margin-bottom: 40px;
 .navbar-index ul {
   text-align: center;
   justify-content: space-around;
+
 }
-
-
 
 .navbar-index a:hover {
   background-color: #214c57;
   color: #ffffff;
 }
+
 
 /*subnavigation end*/
 
@@ -231,41 +232,22 @@ margin-bottom: 40px;
 .mainWrapper {
   padding-top: 10%;
 }
+
+
 .card-grid {
     margin-bottom: 20px;
     margin-top: 20px;
   }
+
   
-.navbar-index a {
-  color: black;
-  font-size: 1.5em;
-  font-family: "bebas neue pro";
-  text-transform: uppercase;
-}
-
-.navbar-index .btn {
-  border-radius: 0px 20px 20px 20px;
-}
-
-.navbar-index ul {
-  text-align: center;
-}
-
-.navbar-index a:hover {
-  background-color: #214c57;
-  color: #ffffff;
-  
-}
-
-.mainWrapper {
-  padding-top: 10%;
-}
 .card-grid {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    border: solid #f2f2f2 0.1em;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  
   }
   
-
 .content {
   width: 60%;
   max-width: 100%;
@@ -293,8 +275,6 @@ margin-bottom: 40px;
   top: -2px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
-
-
 
 
 .card .card_image {
@@ -604,8 +584,39 @@ background-color: pink;
 
 /* Media Query*/
 
-/*mobile screen*/
 
+/*desktop screen size*/
+
+@media only screen and (min-width: 800px) {
+  .hamburger-label {
+    display: none;
+  }
+
+  .menu ul li {
+    color: var(--text-read);
+    margin-right: 15px;
+    display: inline-block;
+  }
+  .menu ul a {
+    font-size: 24px;
+    padding: 0;
+    margin-left: -25px;
+  }
+
+
+}
+
+
+/*tablet*/
+@media (max-width: 880px) {
+  .header-text {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+}
+
+/*mobile screen*/
 
 
 @media only screen and (max-width: 800px) {
@@ -686,12 +697,20 @@ margin-left: 25%;
   }
 
 .header-text {
-  margin-left: 1%;
+
+  max-width: 250px;
+  margin: 0 auto;
 }
   .content {
     width: 90%;
   }
 
+  .about-text {
+    padding: 1em;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -739,29 +758,6 @@ margin-left: 25%;
 
 }
 
-/*tablet*/
-@media (max-width: 880px) {
-}
 
 
 
-/*desktop screen size*/
-
-@media only screen and (min-width: 800px) {
-  .hamburger-label {
-    display: none;
-  }
-
-  .menu ul li {
-    color: var(--text-read);
-    margin-right: 15px;
-    display: inline-block;
-  }
-  .menu ul a {
-    font-size: 24px;
-    padding: 0;
-    margin-left: -25px;
-  }
-
-
-}

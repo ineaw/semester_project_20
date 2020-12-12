@@ -1,20 +1,6 @@
 
 
-.nav-wrapper {
-  display: flex;
-  flex-direction: row;
-}
 
-.navbar {
-  background: linear-gradient(0.25turn, #011d29, #07033d, #041b25);
-}
-.card-grid {
-  width: 100%;
-  position: relative;
-  border: solid #f2f2f2 0.1em;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-
-}
 
 .card .thumb:nth-child(1) {
   padding-bottom: 50%;
@@ -23,16 +9,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .content {
-    width: 80%;
-  }
-  .head-wrapper {
-    width: 80%;
-  }
-  .nav-wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+  
 }
 

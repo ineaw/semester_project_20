@@ -52,17 +52,24 @@
           <div class="card_image" style="background-image: url(../images/exhibition_overview.jpg);"></div>
           <article class="card-text">
             <ul>
-          <h2><i class="fa fa-clock"></i>Opening Times</h2>   
-                <p>Wednesday to Sunday 10.00-18.00 (last entry 17.30).</p>
+          <h2>Exhibition Opening hours</h2>   
+                <p>Tuesday to Thursday 10.00-18.00 (last entry 17.30)</p>
+                <p>Friday to Sunday 09.00-16.00 (last entry 15.30)</p>
                 <p>
                   During school holidays the museum is open as normal.</p>
                   <p> The museum is closed on 24, 25 and 26 December.
                   </p>
                 </ul>
+                <ul>
+                  <h2>shop Opening hours</h2>   
+                        <p>Tuesday to Thursday 09.30-17.00</p>
+                        <p>Friday to Sunday 08.30-15.00</p>
+                        </ul>
+        
           </article>
         </a>
         <div class="card-grid">
-          <article class="about-text">
+          <section class="about-text">
   <H3>Admission</H3>
   <p> The entrance is free for all.
 There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. 
@@ -81,16 +88,16 @@ If you would like to organise a guided tour for your group of 6 or more people, 
               <p> 
                 Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
               </p>
-              </article>
+            </section>
         </div>
                  <a class="card">
-                  <div id="location" class="anchor"></div>
+                  <div id="location"></div>
 
                   <div class="card_image" style="background-image: url(../images/outside_museum.jpg);"></div>
                   <article class="card-text">
 
                   <ul>
-                  <h2><i class="fa fa-map-marker"></i>Location</h2>   
+                  <h2><Location</h2>   
                     <p>The museum is located at</p>                        
                         <p> 555 exhbition Road</p>
                         <p>Science Valley, Norway</p>
@@ -99,8 +106,51 @@ If you would like to organise a guided tour for your group of 6 or more people, 
 
                      </div>  
                     </a> 
+                    <div id="contact"></div>
+
+                    <div class="card-grid">
+                      <section class="about-text">
+                  
+                                       
+                          <div class="form-container">
+                            <section class="contact-us">
+                              <h2>Contact Us</h2>   
+                              <p>Do you want to reach us, do you have feedback questions, Career etc</p>
+                              <p>TLF +111 222 333 444</p>
+                        </section>
+                        </div>
+                          <div class="form-container">
+                          <section class="contact-form">
+                            <h2>Contact form</h2>
+                            <form action="Submit.php" method="GET"></form>
+                            <fieldset class="email">
+                              <label for="email">Email</label>
+                              <input type="email" name="email" placeholder="example@gmail.com">
+                            </fieldset>
+                            <fieldset class="subject">
+                              <label for="email">Subject</label>
+                              <input type="subject" name="subject" placeholder="Subject">
+                            </fieldset>
+                            <fieldset class="message">
+                              <label for="email">Message</label>
+                               <textarea rows = "4" cols = "30" name = "message-area">
+                                 Message text here....
+                               </textarea>
+                            </fieldset>
+                      <fieldset class="submit">
+                        <button type="submit">Send</button>
+                      </fieldset>
+                          </form>
+                          </section>
+                            </article>
+    
+                         </div>  
+                        </a> 
+    
                   </div>
                     </section>
+            </section>
+            
       </main>
         <!--Footer-->
         <footer class="footer-container">
@@ -116,7 +166,8 @@ If you would like to organise a guided tour for your group of 6 or more people, 
               <div class="footer-hours">
                 <p>OPENING HOURS</p>
                 <p>From Monday 14 December</p>
-                <p>Tuesday to Sunday 10.00-18.00</p>
+                <p>Tuesday to Thursday 10.00-18.00</p>
+                <p>Friday and Saturday 09.00-16.00</p>
               </div>
             </div>
             <div class="footer-right">
@@ -133,7 +184,7 @@ If you would like to organise a guided tour for your group of 6 or more people, 
             <fieldset class="email">
               <label for="email"><p>newsletter sign up</p></label>
               <input type="email" name="email" placeholder="example@gmail.com">
-        <button type="submit">Sign Up</button>
+              <button class="valid"></button>
             </fieldset>
                       </div>
         </section>
