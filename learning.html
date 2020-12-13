@@ -28,27 +28,31 @@
             </ul>
         </nav>
     </header>
-  <section class="navbar-index">
+            <!--Subnav-->
+
+  <div class="navbar-index">
       <ul>
       <a class="btn" href="#kids" >Kids</a>
       <a class="btn" href="#teachers" >Teachers</a>
         <a class="btn" href="#researchers" >Researchers</a>
-        <a class="btn" href="#athome" >Science at home</a>
+        <a class="btn" href="#athome" >home</a>
       </ul>
-    </section>
+    </div>
+            <!--Subnav ends-->
+
     <!--Navigation ends-->
   <!--main section-->
         <main>
           <section class="mainWrapper">
 
               <h1>Explore and learn</h1>
-              <article class="about-text">
+              <div class="header-text">
 
           <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
                 We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).
               </p>
-            </article>
-            <!--Content Cards-->
+              </div>
+            <!-- Learning section-->
       <div class="content">
           <div class="card">
             <div id="kids" class="anchor"></div>
@@ -57,9 +61,9 @@
           </div>
       <div class="card-grid">
               <article class="about-text">
-                <p>Are you a young person looking to learn more about science? 
+                <p>Are you a young person looking to learn more about science? </p>
                   <p>Come on down to our museum, there’s plenty to see and do.</p>
-                 <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+                 <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
                 <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.</p>
                 <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.
                   </p>
@@ -91,7 +95,7 @@
         <div class="card">
           <div id="athome" class="anchor"></div>
           <div class="card_image" style="background-image: url(../images/school_work_on_pad.jpg);"></div>
-          <h2>Science @ home</h2>     
+          <h2>Science at home</h2>     
       </div>
     <div class="card-grid">
       <article class="about-text">
@@ -100,22 +104,24 @@
       </article>
       </div>
     </section>
+            <!--learning section end-->
+
         </main>
         <!--Footer-->
-        <footer class="footer-container">
+        <div class="footer-container">
           <div class="footer-left">
             <p class="footer-links">
-              <a href="/about.html">About</a>
-              <a href="/contact.html">Contact</a>
-              <a href="/getinvolved.html">Volunteering</a>
-              <a href="/donations.html">Donate</a>
-            </p>
+              <a href="/visit.html#contact">Contact</a>
+              <a href="/getinvolved.html#volunteer">Volunteering</a>
+              <a href="/getinvolved.html#donate">Donate</a>
+                    </p>
           </div>
             <div class="footer-center">
               <div class="footer-hours">
                 <p>OPENING HOURS</p>
                 <p>From Monday 14 December</p>
-                <p>Tuesday to Sunday 10.00-18.00</p>
+                <p>Tuesday to Thursday 10.00-18.00</p>
+                <p>Friday to Sunday 09.00-16.00</p>
               </div>
             </div>
             <div class="footer-right">
@@ -124,18 +130,25 @@
                 <p>+1 222 333 444</p>
                 <p><a href="mailto:support@company.com">contact@community.com</a></p>
               </div>
-        </footer>
+        </div>
+        <div class="arrowToTop">
+          <a href="#top" class="fas fa-space-shuttle"></a>
+        </div>
+
                 <!--sub footer-->
         <div class="footer_2">
-          <ul><section class="contact-form">
-            <form action="Submit.php" method="GET"></form>
+          <section class="contact-form">
+            <form action="/newslettersuccess.html"  method="GET">
             <fieldset class="email">
               <label for="email"><p>newsletter sign up</p></label>
               <input type="email" name="email" placeholder="example@gmail.com">
-              <button class="valid"></button>
+        <button class="valid"></button>
             </fieldset>
+          </form>
+
+            </section>
                       </div>
-        </section>
+                </section>
         <div class="socialmedia">
         <section class="sm-icons">
           <a class="fa fa-facebook" a href="https://facebook.com"></a>
@@ -146,12 +159,14 @@
         </ul>
         </div>
         </div>
+      </footer>
         <section class="copyright">
           <p class="company-name">Community Science Museum, 2020 &copy;</p>
           </section>
-          <div class="arrowToTop">
-          <a href="#top" class="fa fa-arrow-up"></a>
+  
+  <!--footer+sub footer end-->
         </div>
+        
                 </body>
         </html>
 

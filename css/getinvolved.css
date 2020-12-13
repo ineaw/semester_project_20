@@ -2,11 +2,19 @@
     --main-deco-color: #214c57;
     --nav-color: #bcfd2b;
     --card-main-color: #533083;
-    --orange: ;
     --text-deco: #ffffff;
     --text-read: #000000;
   }
+
+
+  .about-text a {
+    color: var(--text-read);
+    text-decoration: underline;
+    font-weight: 600;
+  }
   
+  /* Cards*/
+
   .card {
     background: var(--main-deco-color);
     color: var(--text-deco);  
@@ -14,7 +22,6 @@
   
   .card-grid {
     display: flex;
-    flex-flow: row wrap;
   }
   
   .card-grid {
@@ -25,21 +32,27 @@
   
   }
   
-  /* donation form*/
+  /* Donation form*/
   
-.donationsForm {
-    font-family: "roboto", sans-serif;
-    color: var(--text-read);
-    width: 80%;
-    position: relative;
-}
+  .donation-text {
+    max-width: 70%;
+  }
 
 .donationsFormInner {
+  font-family: "roboto", sans-serif;
+  color: var(--text-read);  
     margin-bottom: 1em;
     padding: 1em;
-
 }
 
+input[type="number"] {
+  width: 100px;
+}
+
+.validity {
+  display: flex;
+  flex-direction: row;
+}
 input:invalid+span:after {
     content: '*Requierd';
     padding-left: 5px;
@@ -50,10 +63,6 @@ input:valid+span:after {
     padding-left: 5px;
 }
 
-input[type="submit"] {
-    display: none;
-
-}
 
 
   

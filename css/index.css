@@ -2,7 +2,6 @@
   --main-deco-color: #214c57;
   --nav-color: #bcfd2b;
   --card-main-color: #533083;
-  --orange: ;
   --text-deco: #ffffff;
   --main: #ffffff;
   --text-read: #000000;
@@ -34,7 +33,7 @@
   
   .heroCard {
    background-color: var(--text-read);
-   padding: 1.5em;
+   padding-left: 1em;
    position: relative;
    float: left;
    margin-top: -40px;
@@ -42,29 +41,36 @@
   
   .hero h2 {
     color: #ffffff;
-    font-size: 26px;
+    font-size: 2em;
     font-weight: 400;
   
   }
   .hero h3 {
     color: var(--text-deco);
     font-family: "bebas neue pro", Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 400;
 
   }
 
 
   .hero p {
-    font-size: 14px;
+    font-size: 0.8em;
     color: #ffffff;
     max-width: 400px;
     margin: 0 auto;
  
   }
+
+  .hero .fas {
+    margin-right: 30px;
+  }
   
-  
-  
+  .header-text {
+    padding: 3em;
+    max-width: 200px;
+    margin: 0 auto;
+  }
   
   /* Content Grid*/
   
@@ -81,7 +87,7 @@
   }
   
   .card {
-    background-color: black;
+    background-color: #000000;
     color: rgb(0, 0, 0);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -101,7 +107,7 @@
   .card .fas {
     position: relative;
     float: right;
-    color: #ffff;
+    color: #ffffff;
     font-size: 0.7em;
     cursor: pointer;
     padding: 10px;

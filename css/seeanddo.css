@@ -1,10 +1,4 @@
   
- .card_image {
-    padding-bottom: 30%;
-    background-size: cover;
-    background-position: center center;
-    background-image: url("/images/guy_mobile.jpg");
-  }
   
 
 .row {
@@ -24,13 +18,6 @@
     margin-top: 10px;
     vertical-align: middle;
     width: 100%;
-}
-
-.column .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
 }
 
 

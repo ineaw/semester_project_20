@@ -1,3 +1,5 @@
+/*Card section*/
+
 .about-text {
     max-width: 600px;
     margin: 0 auto;
@@ -7,6 +9,9 @@
   flex-direction: row;
   display: flex;
 justify-content: start;
+max-width: 600px;
+margin: 0 auto;
+
 }
 
   .card-grid {
@@ -15,11 +20,26 @@ justify-content: start;
     border: solid #f2f2f2 0.1em;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   }
+
+  /*location*/
+
+  .location h2{
+margin-left: -40px;
+margin-bottom: -10px;
+  }
+
+  .location p {
+    font-size: 1em;
+margin-left: -20px;
+  }
   iframe {
    padding: 40px;
    max-width: 600px;
  
   }
+
+  /*Contact form*/
+
 label {
   font-family: "roboto";
 }
@@ -68,14 +88,14 @@ select {
 
 input[type="email"] {
   padding: 1em;
-  margin-left: -20px;
+  border: 2px solid var(--nav-color);
 }
 
 input[type="subject"] {
   padding: 1em;
   color: #000000;
   border-radius: 4px;
-  border: 1px solid var(--nav-color);
+  border: 2px solid var(--nav-color);
 }
 
 button[type="submit"] {
@@ -103,8 +123,20 @@ textarea {
   .card-text {
     flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    padding-right: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+
   }  
+
+  iframe {
+    position: relative;
+   padding: 20px;
+max-width: 280px;
+height: 200px;
+  }
+
   .form-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -112,12 +144,11 @@ textarea {
     margin: 30% 5%;
   }
 
-    iframe {
-    position: relative;
-   padding: 20px;
-max-width: 280px;
-height: 200px;
+
+  input[type="email"] {
+    margin-left: -20px;
   }
+  
 
 }
 
