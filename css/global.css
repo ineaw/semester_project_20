@@ -111,7 +111,7 @@ header {
   font-size: 1.8em;
   line-height: 1.7;
   background-color: #ffffff;
-  font-family: "bebas neue pro", Arial, Helvetica, sans-serif;
+  font-family: "bebas neue", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
@@ -192,7 +192,7 @@ margin-bottom: 40px;
   
   color: black;
   font-size: 1.5em;
-  font-family: "bebas neue pro", Arial, Helvetica, sans-serif;
+  font-family: "bebas neue", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
@@ -354,14 +354,16 @@ line-height: 1.5;
 
 .arrowToTop .fas {
   font-size: 2em;
-  rotate: 270deg;
   color: #000000;
   padding: 1em;
   float: right;
   margin-left: -80px;
-
-}
-
+  -webkit-transform:rotate(270deg);  
+  -moz-transform: rotate(270deg);  
+  -ms-transform: rotate(270deg);  
+  -o-transform: rotate(270deg);  
+  transform: rotate(270deg);  
+}  
 .arrowToTop .fas:hover {
   color: var(--main-deco-color);
 }
@@ -400,7 +402,7 @@ input [type="email"] {
 
 .contact-form p {
 font-size: 1.6em;
-font-family: "bebas neue pro";
+font-family: "bebas neue", Arial, Helvetica, sans-serif;
 font-weight: 600;
 text-transform: uppercase;
 padding: 0.2em;
