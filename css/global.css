@@ -444,7 +444,7 @@ button[type="submit"]:hover {
 
 
 input[type="email"]:focus {
-  border: 2px solid #aaaa;
+  border: 2px solid #000000;
 }
 
 .valid {
