@@ -1,0 +1,12 @@
+.signed-up {
+    padding: 0.5em;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+
+.signed-up a {
+    text-decoration: underline;
+    color: #000000;
+    font-weight: 600;
+}
