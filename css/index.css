@@ -98,6 +98,10 @@
     top: 0;
     transition: all 0.1s ease-in;
   }
+
+  .card-image_2 {
+  background-image: url(/images/lift_off.jpg);
+  }
   
   .card:hover {
     top: -3px;
