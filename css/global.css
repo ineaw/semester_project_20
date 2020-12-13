@@ -420,12 +420,12 @@ button[type="submit"] {
   height: 2.2em;
   background-color: #000000;
   color: var(--text-deco);
-  padding: 4px 4px 4px 4px;
+  padding: 8px 8px 8px 8px;
   border: none;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
   font-family: "roboto" sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 600;
   margin-top: 1em;
 
@@ -474,7 +474,7 @@ input:valid+button:after {
 }
 
 input:invalid+button:after {
-  content: 'Enter valid Email';
+  content: 'Enter email';
   padding-left: 5px;
 }
 /*Social Media*/
