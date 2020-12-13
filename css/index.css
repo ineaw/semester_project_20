@@ -14,9 +14,9 @@
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(240deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("/images/hero-exhi.jpg");
+    background-image: linear-gradient(240deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("/images/cosmos_ru.jpg");
     background-size: cover;
-    background-position: center top;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -141,15 +141,18 @@
     .hero h1 {
       font-size: 5em;
     }
-.hero{
-    background-image: url(/images/exhi-dark.jpg);
-}
     .hero-card {
       width: 300px;
     }
   }
 
+  @media only screen and (max-width: 500px) {
+    .hero {
+      background-image: url(/images/orion-nebula.jpg);
+    background-size: cover;
+  }
 
+  }
   @media screen and (min-width: 900px) {
     .card_grid {
       grid-template-columns: 1fr 1fr 1fr ;
