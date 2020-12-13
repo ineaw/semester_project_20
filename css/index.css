@@ -27,6 +27,7 @@
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
+    margin-bottom: 30px;
   }
   
   
@@ -35,27 +36,24 @@
    padding-left: 1em;
    padding-right: 1em;
    padding-bottom: 1em;
-
    position: relative;
    float: left;
   }
   
-  .hero h5 {
-    font-size: 1.5em;
-    font-weight: 400;
-  
-  }
   .hero h3 {
     color: var(--text-deco);
-    font-family: "bebas neue", Arial, Helvetica, sans-serif;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
     font-size: 1.3em;
     font-weight: 400;
-
+  }
+ 
+  .hero h3:nth-child(2) {
+    font-style: italic;
+    font-size: 1.5em;
   }
 
-
   .hero p {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #ffffff;
     max-width: 200px;
     margin: 0 auto;

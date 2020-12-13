@@ -7,35 +7,29 @@
   }
   
   
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 20px;
-    margin-top: 80px;
-  }
-  
-  .column {
-    flex: 25%;
-    max-width: 100%;
-    padding: 0 10px;
-  }
-  
-  .column img {
-    margin-top: 10px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  .column .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  
-  
-  @media screen and (max-width: 800px) {
     
   
+/*desktop*/
+
+
+@media screen and (min-width: 900px) {
+}
+
+
+  /*tablet*/
+  @media screen and (max-width: 880px) {
+      
+  }
+
+  /*mobile*/
+
+
+@media only screen and (max-width: 800px) 
+{
+}
+
+
+  /*smaller mobile screens*/
+  @media only screen and (max-width: 600px) {
   }
   

@@ -543,7 +543,7 @@ background-color: #4267B2;
 /* Media Query*/
 
 
-/*desktop screen size*/
+/*desktop*/
 
 @media only screen and (min-width: 800px) {
   .hamburger-label {
@@ -567,7 +567,7 @@ background-color: #4267B2;
   
 }
 
-/*mobile screen*/
+/*mobile*/
 
 
 @media only screen and (max-width: 800px) {
