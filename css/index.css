@@ -129,32 +129,32 @@
     background-position: center center;
   }
   
+  /*tablet*/
   @media screen and (min-width: 600px) {
     .card_grid{
       grid-template-columns: 1fr 1fr;
-      }
-    
+      }    
       
   }
-  
-  @media only screen and (max-width: 800px) {
+  /*mobile*/
+  @media only screen and (max-width: 600px) {
     .hero h1 {
       font-size: 5em;
     }
-
-
+.hero{
+    background-image: url(/images/exhi-dark.jpg);
+}
     .hero-card {
       width: 300px;
     }
   }
-  
-  @media only screen and (max-width: 800px) {
-  
-  }
-  
+
+
   @media screen and (min-width: 900px) {
     .card_grid {
       grid-template-columns: 1fr 1fr 1fr ;
     }    
-    }
+  }
+   
+  
   
