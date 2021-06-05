@@ -1,91 +1,137 @@
-:root {
-    --main-deco-color: #214c57;
-    --nav-color: #bcfd2b;
-    --card-main-color: #533083;
-    --text-deco: #ffffff;
-    --text-read: #000000;
+.main-wrapper h1 {
+  color: var(--black);
+  background-color: var(--nav-color);
+}
+
+.involved {
+  background-color: var(--nav-color);
+}
+
+.exhibition-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exhibition-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+}
+
+.exhibtion-card,
+.header-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  justify-content: baseline;
+  margin: 20px;
+}
+
+.header-card {
+  background-color: var(--nav-color);
+}
+
+.exh-title,
+.exh-title h3 {
+  text-align: center;
+  color: var(--black);
+  margin: 0;
+  font-size: 2rem;
+  font-family: bebas neue;
+  font-weight: 400;
+  padding: 1em;
+}
+
+.exh-title h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--nav-color);
+}
+
+.header-card img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/*desktop*/
+
+@media (min-width: 800px) {
+  .wrapper {
+    grid-template-columns: 1fr;
   }
 
-
-  .about-text a {
-    color: var(--text-read);
-    text-decoration: underline;
-    font-weight: 600;
+  .exhibition-grid {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  /* Cards*/
+}
 
-  .card {
-    background: var(--main-deco-color);
-    color: var(--text-deco);  
-  }
-  
-  .card-grid {
+/* mobile*/
+
+@media screen and (max-width: 800px) {
+  section.contact-form form {
     display: flex;
   }
-  
-  .card-grid {
-    width: 100%;
-    position: relative;
-    border: solid #f2f2f2 0.1em;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-  
+
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em 2em;
+    margin: 30% 5%;
   }
-  
-  /* Donation form*/
-  
-  .donation-text {
-    max-width: 70%;
+
+  input[type="email"] {
+    margin-left: -20px;
   }
+}
+
+/* Donation form*/
 
 .donationsFormInner {
   font-family: "roboto", sans-serif;
-  color: var(--text-read);  
-    margin-bottom: 1em;
-    padding: 1em;
-  
+  color: var(--text-read);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-input[type="number"] {
-  width: 100px;
+label {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+input {
+  width: 60px;
 }
 
 .validity {
-  display: flex;
-  flex-direction: column;
+  font-size: 1.3rem;
 }
-input:invalid+span:after {
-    content: '*Requierd';
-    padding-left: 5px;
-}
-
-input:valid+span:after {
-    content: 'NOK';
-    padding-left: 5px;
-}
-
 
 @media screen and (min-width: 900px) {
 }
 
-
-  /*tablet*/
-  @media screen and (max-width: 880px) {
-      
-  }
-
-  /*mobile*/
-
-
-@media only screen and (max-width: 800px) 
-{
+/*tablet*/
+@media screen and (max-width: 880px) {
 }
 
+/*mobile*/
 
-  /*smaller mobile screens*/
-  @media only screen and (max-width: 600px) {
-  }
+@media only screen and (max-width: 800px) {
+}
 
-  
-  
-    
+/*smaller mobile screens*/
+@media only screen and (max-width: 600px) {
+}

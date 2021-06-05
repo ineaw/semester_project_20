@@ -1,38 +1,11 @@
 .signed-up {
-    padding: 0.5em;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
+  padding: 0.5em;
+  max-width: 500px;
+  margin: 0 auto;
+}
 
 .signed-up a {
-    text-decoration: underline;
-    color: #000000;
-    font-weight: 600;
+  text-decoration: underline;
+  color: #000000;
+  font-weight: 600;
 }
-
-/*desktop*/
-
-
-@media screen and (min-width: 900px) {
-}
-
-
-  /*tablet*/
-  @media screen and (max-width: 880px) {
-      
-  }
-
-  /*mobile*/
-
-
-@media only screen and (max-width: 800px) 
-{
-}
-
-
-  /*smaller mobile screens*/
-  @media only screen and (max-width: 600px) {
-  }
-
-

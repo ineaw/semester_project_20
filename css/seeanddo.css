@@ -1,28 +1,64 @@
-  
-  
-
-
-
-/*desktop*/
-
-
-@media screen and (min-width: 900px) {
+.exhibition-container {
+  max-width: 1000px;
+  margin: auto;
 }
 
-
-  /*tablet*/
-  @media screen and (max-width: 880px) {
-      
-  }
-
-  /*mobile*/
-
-
-@media only screen and (max-width: 800px) 
-{
+.see {
+  background-color: var(--nav-color);
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  /*smaller mobile screens*/
-  @media only screen and (max-width: 600px) {
+.exhibition-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+}
+
+.header-card {
+  background-color: var(--main-deco-color);
+  color: var(--white);
+}
+
+.exhibtion-card,
+.header-card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  justify-content: baseline;
+}
+
+.exhibtion-card img,
+.header-card img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.tickets {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1em;
+  font-size: 1rem;
+}
+
+/* .exhibtion-card img:hover,
+.header-card img:hover {
+  filter: brightness(110%);
+} */
+
+@media (min-width: 800px) {
+  .wrapper {
+    grid-template-columns: 1fr;
   }
+
+  .exhibition-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -14,42 +14,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-
   </head>
       <body>
-        <!--Navigation menu-->
         <header>
           <nav class="menu">
-            <a href="/index.html">
-              <img class="Logo" src="images/Logobl.png" alt="Logo, home button">
+            <a href="index.html">
+              <img class="logo" src="images/Logobl.png" alt="Logo, home button">
               </a>
-                      <input type="checkbox" id="menuToggle">
-                  <label for="menuToggle" class="menu-icon" alt="hamburger navigation bar"><i class="fa fa-bars"></i></label>
-                  <ul>
-                      <li><a href="/learning.html">Learning</a></li>
-                      <li><a href="/seeanddo.html">See & Do</a></li>
-                      <li><a href="/visit.html">Visit</a></li>
-                      <li><input type="text" placeholder="Search.." button class="search-bar" alt="search bar"><i class="fas fa-search" alt="search icon"></i></button></li>
-                      </ul>
-          </nav>
-      </header>
-              <!--Subnav-->
-
-    <section class="navbar-index">
-        <ul>
-        <a class="btn" href="/getinvolved.html">Donate</a>
-        <a class="btn" href="/getinvolved.html">Volunteer</a>
-          <a class="btn" href="/visit.html">Visit</a>
-          <a class="btn" href="/exhibition.html">Exhibitions</a>
-
-        </ul>
-      </section>
-              <!--Subnav ends-->
-
-      <!--Navigation ends-->
-              <!--Sign up success section-->
-
-          <main>
+              <input type="checkbox" id="menuToggle">
+              <label for="menuToggle" class="menu-icon" alt="hamburger navigation bar"><i class="fa fa-bars"></i></label>
+              <ul>
+                <li class="exh"><a href="exhibition.html">Exhibitions</a></li>
+                <li class="learn"><a href="learning.html">Learning</a></li>
+                <li class="see"><a href="seeanddo.html">See & Do</a></li>
+                <li class="visit"><a href="visit.html">Visit</a></li>
+                <li class="involved"><a href="getinvolved.html">Get involved</a></li>
+                <li><input type="text" placeholder="Search.." button class="search-bar" alt="search bar"><i class="fas fa-search" alt="search icon"></i></button></li>
+              </ul>
+        </nav>
+      </header>  
+              <main>
             <section class="mainWrapper">
           <div class="content">
       <div class="card-grid">
@@ -59,22 +43,17 @@
                 <p>Welcome to the Community Museum family.</p>
               <p><a href="/index.html">Keep exploring</a>
               </p>  
-
             </article>
       </div>
       </div>
     </section>
-
         </main>
-                <!--Success end-->
-
-        <!--Footer-->
-        <footer class="footer-container">
+        <section class="footer-container">
           <div class="footer-left">
             <p class="footer-links">
-              <a href="/visit.html#contact">Contact</a>
-              <a href="/getinvolved.html#volunteer">Volunteering</a>
-              <a href="/getinvolved.html#donate">Donate</a>
+              <a href="visit.html">Contact</a>
+              <a href="getinvolved.html">Volunteering</a>
+              <a href="getinvolved.html">Donate</a>
             </p>
           </div>
             <div class="footer-center">
@@ -86,41 +65,36 @@
             </div>
             <div class="footer-right">
               <p>CONTACT US</p>
-                <p>Exhibition Road 555, Science Valley, Norway</p>
+                <p>Exhibition Road 555, </p>
+                  <p>Science Valley, Norway</p>
                 <p>+1 222 333 444</p>
-                <p><a href="mailto:example@gmail.com" alt="email adress to company">contact@community.com</a></p>
               </div>      
-        </footer>
-        <div class="arrowToTop">
-          <a href="#top" class="fas fa-space-shuttle"class=></a>
-        </div>
-        
-                <!--sub footer-->
-        <div class="footer_2">
-          <section class="contact-form">
-            <form action="/success.html"  method="GET">
-            <fieldset class="email" alt="newsletter submit form">
-              <label for="email" alt="email input for newsletter"><p>newsletter sign up</p></label>
-              <input type="email" name="email" placeholder="example@gmail.com">
-        <button class="valid"></button>
-        </form>
-            </fieldset>
             </section>
-                      </div>
-        <div class="socialmedia">
-        <section class="sm-icons">
-          <a class="fa fa-facebook" a href="https://facebook.com"></a>
-          <a class="fa fa-twitch" a href="https://twitch.com"></a>
-          <a class="fa fa-instagram" a href="https://instagram.com"></a>
-          <a class="fa fa-youtube" a href="https://youtube.com"></a>
-        </section>
-        </div>
+        <section class="footer_2">
+          <div class="sign-up">
+            <h5>Sign up for our newsletter: </h5>
+            <input type="text" placeholder="Enter your e-mail address" id="signup-email" name="newsletter" aria-label="newsletter sign-up form">
+            <button class="btn sign" role="button">Sign up</button>
+            <div class="arrowToTop">
+              <a href="#top" class="fas fa-space-shuttle"></a>
+            </div>    
+          
+            <div class="email-error"></div>
+            </div>
+          </div>
+            </section>
+            <section class="socialmedia">
+              <div class="sm-icons">
+                <a class="fa fa-facebook" a href="#" ></a>
+                <a class="fa fa-twitch" a href="#" ></a>
+                <a class="fa fa-instagram" a href="#" ></a>
+                <a class="fa fa-youtube" a href="#" ></a>
+              </div>
+            </section>
+        </footer>
           <section class="copyright">
             <p class="company-name">Community Science Museum, 2020 &copy;</p>
             </section>
-          
-          <!--footer+sub footer end-->
-        
-        </body>
+                        </body>
         </html>
         

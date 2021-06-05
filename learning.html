@@ -5,125 +5,87 @@
     <meta name="description" content="Take the Community science museum home or to school, section with information for teachers, school kids and parents " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
-
-    <link href="css/learning.css" rel="stylesheet" />
     <link href="css/global.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"
-    ></script> 
+    <link href="css/learning.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="https://use.typekit.net/ohb4asl.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-
   </head>
     <body>
       <div id="top" class="arrowToTop"></div>
-      <!--Navigation menu-->
       <header>
         <nav class="menu">
-          <div class="menu">
-            <a href="/index.html">
-              <img class="Logo" src="images/Logobl.png" alt="Logo, home button">
-              </a>
-              <input type="checkbox" id="menuToggle">
-              <label for="menuToggle" class="menu-icon" alt="hamburger navigation bar"><i class="fa fa-bars"></i></label>
-              <ul>
-                  <li><a href="/learning.html">Learning</a></li>
-                  <li><a href="/seeanddo.html">See & Do</a></li>
-                  <li><a href="/visit.html">Visit</a></li>
-                  <li><input type="text" placeholder="Search.." button class="search-bar" alt="search bar"><i class="fas fa-search" alt="search icon"></i></button></li>
-                </ul>
-        </nav>
-    </header>
-            <!--Subnav-->
-
-  <div class="navbar-index">
-      <ul>
-      <a class="btn" href="#kids" >Kids</a>
-      <a class="btn" href="#teachers" >Teachers</a>
-        <a class="btn" href="#researchers" >Researchers</a>
-        <a class="btn" href="#athome" >home</a>
-      </ul>
-    </div>
-            <!--Subnav ends-->
-
-    <!--Navigation ends-->
-  <!--main section-->
-        <main>
-          <section class="mainWrapper">
-
-              <h1>Explore and learn</h1>
-              <div class="header-text">
-
-          <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
-                <p>We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).
-              </p>
-              </div>
-            <!-- Learning section-->
-      <div class="content">
-          <div class="card">
-            <div id="kids" class="anchor"></div>
-            <div class="card_image" style="background-image: url(../images/back_of_kid_in_museum.jpg);" alt="back of kid looking out over museum"></div>
-           <h2>For kids</h2>     
-          </div>
-      <div class="card-grid">
-              <article class="about-text">
-                <p>Are you a young person looking to learn more about science? </p>
-                  <p>Come on down to our museum, there’s plenty to see and do.</p>
-                 <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
-                <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.</p>
-                <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.
-                  </p>
+          <a href="index.html">
+            <img class="logo" src="images/Logobl.png" alt="Logo, home button">
+            </a>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon" alt="hamburger navigation bar"><i class="fa fa-bars"></i></label>
+            <ul>
+              <li class="exh"><a href="exhibition.html">Exhibitions</a></li>
+              <li class="learn"><a href="learning.html">Learning</a></li>
+              <li class="see"><a href="seeanddo.html">See & Do</a></li>
+              <li class="visit"><a href="visit.html">Visit</a></li>
+              <li class="involved"><a href="getinvolved.html">Get involved</a></li>
+              <li><input type="text" placeholder="Search.." button class="search-bar" alt="search bar"><i class="fas fa-search" alt="search icon"></i></button></li>
+            </ul>
+      </nav>
+    </header>  
+        <main>                     
+          <section class="main-wrapper">
+            <h1>Explore and learn</h1>
+          <article class="exhibition-container">
+            <div class="wrapper">
+                <figure class="header-card">
+                 <img src="images/back_of_kid_in_museum.jpg" alt=""/>
+                      <h2>For kids</h2>
+                      <div class="header-text">
+                     <p>Are you a young person looking to learn more about science?</p>
+                     <p>Come on down to our museum, there’s plenty to see and do.</p>
+                     <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
+                     <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.</p>
+                     <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>  
+                    </div>
+                </figure>
+                <section class="exhibition-grid">
+                  <figure class="exhibtion-card">
+                 <img src="images/guy_mobile.jpg" alt=""/>
+                 <div class="exh-title">
+                    <h3>For teachers</h3>
+                    <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.</p>
+                    <p> Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
+                              </div>
+                 <button class="btn">Get in touch</button>
+                  </figure>
+                       <figure class="exhibtion-card">
+                     <img src="images/microscope_close_up_steel.jpg" alt=""/>
+                        <div class="exh-title">
+                        <h3>Researchers</h3>
+                        <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. 
+                          <p>We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
+                          </div> 
+                      <button class="btn">Get in touch</button> 
+                      </figure>
+                           <figure class="exhibtion-card">
+                            <img src="images/scientific.jpg" alt=""/>
+                            <div class="exh-title">
+                            <h3>Science at home</h3>
+                            <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. 
+                              <p>You can even say hello and shake the hand of Rob the Robot.</p>
+                               </div>
+                               <button class="btn">Get in touch</button>
+                        </figure>
               </article>
-      </div>
-        <div class="card">
-          <div id="teachers" class="anchor"></div>
-          <div class="card_image" style="background-image: url(/images/guy_mobile.jpg);" alt="man looking up information on his phone in an exhibiton space"></div>
-      <h2>For teachers</h2> 
-        </div>
-    <div class="card-grid">
-      <article class="about-text">
-      <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.</p>
-       <p> Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.
-        </p>
-        </article>
-    </div>
-        <div class="card">
-          <div id="researchers" class="anchor"></div>
-          <div class="card_image" style="background-image: url(/images/microscope_close_up_steel.jpg);" alt="close up of steel microsope"></div>
-         <h2>Researchers</h2>     
-        </div>
-    <div class="card-grid">
-      <article class="about-text">
-      <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. 
-        <p>We have online records, laboratory space, and a working relationship with a number of universities around the country.
-      </p>
-      </article>
-    </div>
-        <div class="card">
-          <div id="athome" class="anchor"></div>
-          <div class="card_image" style="background-image: url(/images/school_work_on_pad.jpg);" alt="Mother and child learning science on a pad"></div>
-          <h2>Science at home</h2>     
-      </div>
-    <div class="card-grid">
-      <article class="about-text">
-      <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. 
-        <p>You can even say hello and shake the hand of Rob the Robot.
-</p>
-      </article>
-      </div>
-    </section>
-            <!--learning section end-->
-
+         </section>
         </main>
-        <!--Footer-->
-        <footer class="footer-container">
+        <section class="footer-container">
           <div class="footer-left">
             <p class="footer-links">
-              <a href="/visit.html#contact">Contact</a>
-              <a href="/getinvolved.html#volunteer">Volunteering</a>
-              <a href="/getinvolved.html#donate">Donate</a>
+              <a href="visit.html">Contact</a>
+              <a href="getinvolved.html">Volunteering</a>
+              <a href="getinvolved.html">Donate</a>
             </p>
           </div>
             <div class="footer-center">
@@ -135,41 +97,35 @@
             </div>
             <div class="footer-right">
               <p>CONTACT US</p>
-                <p>Exhibition Road 555, Science Valley, Norway</p>
+                <p>Exhibition Road 555, </p>
+                  <p>Science Valley, Norway</p>
                 <p>+1 222 333 444</p>
-                <p><a href="mailto:example@gmail.com" alt="email adress to company">contact@community.com</a></p>
               </div>      
-        </footer>
-        <div class="arrowToTop">
-          <a href="#top" class="fas fa-space-shuttle"class=></a>
-        </div>
-        
-                <!--sub footer-->
-        <div class="footer_2">
-          <section class="contact-form">
-            <form action="/success.html"  method="GET">
-            <fieldset class="email" alt="newsletter submit form">
-              <label for="email" alt="email input for newsletter"><p>newsletter sign up</p></label>
-              <input type="email" name="email" placeholder="example@gmail.com">
-        <button class="valid"></button>
-        </form>
-            </fieldset>
             </section>
-                      </div>
-        <div class="socialmedia">
-        <section class="sm-icons">
-          <a class="fa fa-facebook" a href="https://facebook.com"></a>
-          <a class="fa fa-twitch" a href="https://twitch.com"></a>
-          <a class="fa fa-instagram" a href="https://instagram.com"></a>
-          <a class="fa fa-youtube" a href="https://youtube.com"></a>
-        </section>
-        </div>
+        <section class="footer_2">
+          <div class="sign-up">
+            <h5>Sign up for our newsletter: </h5>
+            <input type="text" placeholder="Enter your e-mail address" id="signup-email" name="newsletter" aria-label="newsletter sign-up form">
+            <button class="btn sign" role="button">Sign up</button>
+            <div class="arrowToTop">
+              <a href="#top" class="fas fa-space-shuttle"></a>
+            </div>    
+            <div class="email-error"></div>
+            </div>
+          </div>
+            </section>
+            <section class="socialmedia">
+              <div class="sm-icons">
+                <a class="fa fa-facebook" a href="#" ></a>
+                <a class="fa fa-twitch" a href="#" ></a>
+                <a class="fa fa-instagram" a href="#" ></a>
+                <a class="fa fa-youtube" a href="#" ></a>
+              </div>
+            </section>
+        </footer>
           <section class="copyright">
             <p class="company-name">Community Science Museum, 2020 &copy;</p>
             </section>
-          
-          <!--footer+sub footer end-->
-        
-        </body>
+            </body>
         </html>
         
