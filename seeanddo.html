@@ -30,7 +30,7 @@
               <li class="see"><a href="seeanddo.html">See & Do</a></li>
               <li class="visit"><a href="visit.html">Visit</a></li>
               <li class="involved"><a href="getinvolved.html">Get involved</a></li>
-              <li><input type="text" placeholder="Search.." button class="search-bar" alt="search bar"><i class="fas fa-search" alt="search icon"></i></button></li>
+              <li><label for="search-bar"><input type="text" placeholder="Search.." button class="search-bar" alt="search bar"><i class="fas fa-search" alt="search icon"></i></label></li>
             </ul>
          </nav>
       </header>  
@@ -40,12 +40,12 @@
               <article class="exhibition-container">
                  <div class="wrapper">
                     <figure class="header-card">
-                        <img src="images/exhibitionspace.jpg" alt=""/>
+                        <img src="images/exhibitionspace.jpg" alt="white room with space exhibition"/>
                        <h2 class="exh-title">Special Events and Exhibitions</h2> 
                     </figure>
                    <section class="exhibition-grid">
                      <figure class="exhibtion-card">
-                       <img src="images/space_man_working.jpg" alt=""/>
+                       <img src="images/space_man_working.jpg" alt="Astronaut working in space"/>
                          <div class="exh-title">
                              <time>July 1 - July 30</time>
                          <h3>Visiting Professor of Aeronautics</h3>
@@ -54,7 +54,7 @@
                             </div>
                             </figure>
                                    <figure class="exhibtion-card">
-                                 <img src="images/space_dinos.jpg" alt=""/>
+                                 <img src="images/space_dinos.jpg" alt="dinosaurs under the stars"/>
                                     <div class="exh-title">
                                       <time>July 1 - July 30</time>
                                     <h3>Night in the Museum</h3>
@@ -63,7 +63,7 @@
                                   </div> 
                                 </figure>
                                <figure class="exhibtion-card">
-                                    <img src="images/scientific.jpg" alt=""/>
+                                    <img src="images/scientific.jpg" alt="woman looking inside a vacuum chamber"/>
                                  <div class="exh-title">
                                   <time>July 1 - July 30</time>
                                   <h3>Energetica Exhibition on Loan</h3>
@@ -73,7 +73,7 @@
                                   </div>
                               </figure>
                               <figure class="exhibtion-card">
-                          <img src="images/projections_on_guy.jpg" alt=""/>
+                          <img src="images/projections_on_guy.jpg" alt="Man with projections on him"/>
                        <div class="exh-title">
                          <time>July 1 - July 30</time>
                         <h3>virtual Museum</h3>
@@ -117,9 +117,11 @@
         </section>
         <section class="footer_2">
           <div class="sign-up">
-             <h5>Sign up for our newsletter: </h5>
+            <label for="newsletter">Sign up: 
               <input type="text" placeholder="Enter your e-mail address" id="signup-email" name="newsletter" aria-label="newsletter sign-up form">
-              <button class="btn sign" role="button">Sign up</button>
+                <button class="btn sign" role="button">Sign up</button>
+              </label>
+                    <button class="btn sign" role="button">Sign up</button>
              <div class="arrowToTop">
            <a href="#top" class="fas fa-space-shuttle"></a>
         </div>    
