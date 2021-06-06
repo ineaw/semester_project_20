@@ -194,6 +194,10 @@ header {
   transition: 0.3s all ease-in-out;
 }
 
+.sign-up h5 {
+  font-size: 1.2em;
+}
+
 /* sub footer*/
 
 .arrowToTop .fas {
@@ -229,7 +233,7 @@ header {
 .sign-up input {
   width: 200px;
   height: 12px;
-  margin: 15px;
+  margin: 10px;
   border: 2px solid var(--black);
   outline: none;
   padding: 15px;
@@ -327,6 +331,9 @@ header {
   .header-text {
     max-width: 350px;
     margin: 0 auto;
+  }
+  .footer_2 {
+    flex-direction: column;
   }
 }
 
