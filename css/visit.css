@@ -16,15 +16,15 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2em;
+  margin: 1em;
 }
 
 .exhibition-grid {
   display: grid;
   grid-template-columns: 1fr;
   text-align: left;
-  gap: 30px;
-  margin: 4em;
+  gap: 40px;
+  margin: 3em 0em;
 }
 
 .exhibtion-card,
@@ -33,21 +33,22 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 3em;
 }
 
 .header-card {
   background-color: var(--nav-color);
-  padding: 2em;
 }
 
 .opening {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
 }
 
 .opening ul p {
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .exhibtion-card img,
@@ -141,11 +142,14 @@ h2 {
     justify-content: left;
     padding: 1em;
   }
+
   .wrapper {
     grid-template-columns: 1fr;
+    margin: 3em;
   }
 
   .exhibition-grid {
     grid-template-columns: 1fr 1fr;
+    margin: 4em;
   }
 }
