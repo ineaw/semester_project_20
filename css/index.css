@@ -4,71 +4,70 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(240deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../images/cosmos_ru.jpg");
+  background-image: url("../images/spaceman_close_up.jpg");
+  filter: brightness(105%);
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   margin-bottom: 50px;
 }
 
 .hero h1 {
   font-family: "bebas neue pro", "bebas neue", Arial, Helvetica, sans-serif;
-  font-size: 6em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 30px;
+  color: white;
+  background-color: var(--black);
+  text-align: left;
 }
 
 .hero-card {
   background-color: var(--black);
   padding: 0.5em 0.5em 1em 1em;
-  width: 70vw;
+  width: 200px;
   height: 100%;
   border-radius: 0px 10px 0px 0px;
 }
 
-.hero h3,
-.hero h4,
+.hero h2,
 .hero p,
-.hero h1,
 .hero a {
   color: var(--white);
+  margin: 0px 5px;
 }
 
-.hero h3,
-.hero h4 {
-  font-size: 2em;
+.hero h2 {
+  font-size: 1.5em;
   font-weight: 400;
-  max-width: 400px;
-}
-
-.hero h4 {
   font-style: italic;
   font-family: "roboto", sans-serif;
-}
-
-.hero p {
-  max-width: 260px;
-  font-size: 0.9rem;
+  text-align: left;
 }
 
 .cta-hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.exhibtion-card {
-  background-color: var(--card-main-color);
-  border-radius: 10px;
+.hero-btn {
+  border-radius: 4px;
+  padding: 7px 10px;
+  margin: 8px 0;
+  border: none;
   cursor: pointer;
+  font-family: "roboto", sans-serif;
+  font-size: 1rem;
+  transition: 0.5s all ease-in-out;
+  background-color: var(--nav-color);
+  color: var(--black);
 }
 
-.exhibtion-card img,
-.cosmo-card img {
-  height: auto;
-  width: 100%;
-  border-radius: 10px 10px 0px 0px;
-  transition: 0.3s all ease-in-out;
+.hero-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .exh-title {
@@ -94,8 +93,20 @@
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 80vw;
-  padding: 3em;
+}
+
+.exhibtion-card {
+  background-color: var(--card-main-color);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 300px;
+}
+
+.exhibtion-card img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.3s all ease-in-out;
 }
 
 .hero .fas,
@@ -121,13 +132,20 @@
 }
 
 /*tablet*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .hero-card {
-    width: 50vw;
+    width: 350px;
+  }
+
+  .exhibtion-card {
+    width: 400px;
   }
 
   .hero h1 {
-    font-size: 6em;
+    font-size: 4rem;
+  }
+  .cta-hero {
+    flex-direction: row;
   }
 }
 
@@ -137,7 +155,13 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-card {
-    width: 35vw;
+  .exhibtion-card {
+    width: 400px;
   }
 }
+
+/* @media screen and (min-width: 1300px) {
+  .hero {
+    background-image: url("../images/exhibitionspace.jpg");
+  }
+} */

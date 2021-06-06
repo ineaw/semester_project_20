@@ -42,6 +42,7 @@ h5 {
 
 h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 p {
@@ -69,6 +70,9 @@ header {
   line-height: 1.7;
   text-transform: uppercase;
   background: #ffffff;
+  position: sticky;
+  z-index: 2;
+  top: 0;
 }
 
 .menu {
@@ -79,11 +83,8 @@ header {
   justify-content: space-between;
   width: 100%;
   height: 90px;
-  position: fixed;
-  top: 0;
   z-index: 2;
   background: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .menu ul a {
@@ -116,6 +117,7 @@ header {
   padding: 0.6em;
   cursor: pointer;
 }
+
 .menu .fas:active {
   color: var(--nav-color);
   cursor: pointer;
@@ -139,7 +141,7 @@ header {
   font-size: 2rem;
   font-family: bebas neue;
   font-weight: 400;
-  padding: 1em;
+  padding: 1em 1em 2em 1em;
 }
 
 .exhibtion-card img,
@@ -149,11 +151,6 @@ header {
   border-radius: 10px 10px 0px 0px;
 }
 
-.exhibtion-card,
-.header-card {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
 /*Footer*/
 
 .footer-container {
@@ -337,9 +334,11 @@ header {
     width: 100%;
     overflow: hidden;
   }
+
   .menu ul a {
     display: flex;
     flex-direction: row;
+    font-size: 1.7rem;
     justify-content: center;
     z-index: 1;
   }
@@ -354,8 +353,6 @@ header {
   input[type="text"] {
     justify-content: center;
   }
-
-  /*Header menu*/
 
   .menu-icon {
     display: block;
